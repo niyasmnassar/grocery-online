@@ -1,0 +1,174 @@
+{ 
+  "procategory": [
+        {
+            "id": 1,
+            "proimg": "https://reactstrap.github.io/assets/318x180.svg",
+            "title": "Surekha Rice",
+            "price": "40",
+            "ourprice": "37",
+            "quantity": "1",
+            "type": "Kg",
+            "category": "rice"
+        },
+        {
+            "id": 2,
+            "proimg": "https://reactstrap.github.io/assets/318x180.svg",
+            "title": "Jaya Rice",
+            "price": "41",
+            "ourprice": "38",
+            "quantity": "1",
+            "type": "Kg",
+            "category": "rice"
+        },
+        {
+            "id": 3,
+            "proimg": "https://reactstrap.github.io/assets/318x180.svg",
+            "title": "Raw Rice",
+            "price": "42",
+            "ourprice": "39",
+            "quantity": "1",
+            "type": "Kg",
+            "category": "rice"
+        },
+        {
+            "id": 4,
+            "proimg": "https://reactstrap.github.io/assets/318x180.svg",
+            "title": "Rose Matta Rice",
+            "price": "37",
+            "ourprice": "35",
+            "quantity": "1",
+            "type": "Kg",
+            "category": "rice"
+        },
+        {
+            "id": 5,
+            "proimg": "https://reactstrap.github.io/assets/318x180.svg",
+            "title": "Rose Matta Long Rice",
+            "price": "37",
+            "ourprice": "35",
+            "quantity": "1",
+            "type": "Kg",
+            "category": "rice"
+        },
+        {
+            "id": 6,
+            "proimg": "https://reactstrap.github.io/assets/318x180.svg",
+            "title": "India Gate",
+            "price": "90",
+            "ourprice": "80",
+            "quantity": "1",
+            "type": "Kg",
+            "category": "rice"
+        },
+        {
+            "id": 7,
+            "proimg": "https://reactstrap.github.io/assets/318x180.svg",
+            "title": "Rose Khaima",
+            "price": "110",
+            "ourprice": "100",
+            "quantity": "1",
+            "type": "Kg",
+            "category": "rice"
+        },
+        {
+            "id": 8,
+            "proimg": "https://reactstrap.github.io/assets/318x180.svg",
+            "title": "Barkath silver",
+            "price": "110",
+            "ourprice": "100",
+            "quantity": "1",
+            "type": "Kg",
+            "category": "rice"
+        },
+        {
+            "id": 9,
+            "proimg": "https://reactstrap.github.io/assets/318x180.svg",
+            "title": "Urad Daal",
+            "price": "126",
+            "ourprice": "118",
+            "quantity": "1",
+            "type": "Kg",
+            "category": "daal"
+        },
+        {
+            "id": 10,
+            "proimg": "https://reactstrap.github.io/assets/318x180.svg",
+            "title": "Green Moong Daal",
+            "price": "130",
+            "ourprice": "120",
+            "quantity": "1",
+            "type": "Kg",
+            "category": "pulses"
+        },
+        {
+            "id": 11,
+            "proimg": "https://reactstrap.github.io/assets/318x180.svg",
+            "title": "Piece Daal",
+            "price": "70",
+            "ourprice": "68",
+            "quantity": "1",
+            "type": "Kg",
+            "category": "dal"
+        },
+        {
+            "id": 12,
+            "proimg": "https://reactstrap.github.io/assets/318x180.svg",
+            "title": "Sambar Daal",
+            "price": "69",
+            "ourprice": "64",
+            "quantity": "1",
+            "type": "Kg",
+            "category": "dal"
+        },
+        {
+            "id": 13,
+            "proimg": "https://reactstrap.github.io/assets/318x180.svg",
+            "title": "White Channa",
+            "price": "85",
+            "ourprice": "80",
+            "quantity": "1",
+            "type": "Kg",
+            "category": "pulses"
+        },
+        {
+            "id": 14,
+            "proimg": "https://reactstrap.github.io/assets/318x180.svg",
+            "title": "Brown Channa",
+            "price": "70",
+            "ourprice": "65",
+            "quantity": "1",
+            "type": "Kg",
+            "category": "pulses"
+        },
+        {
+            "id": 15,
+            "proimg": "https://reactstrap.github.io/assets/318x180.svg",
+            "title": "Masoori Daal",
+            "price": "74",
+            "ourprice": "70",
+            "quantity": "1",
+            "type": "Kg",
+            "category": "pulses"
+        }
+    ],"categorylist":[
+        {
+            "id": 1,
+            "category": "rice",
+            "value": "all"
+        },
+        {
+            "id": 1,
+            "category": "pulses",
+            "value": "all"
+        },
+        {
+            "id": 1,
+            "category": "Dal",
+            "value": "all"
+        }
+        
+    ]
+    "profile": {
+        "name": "typicode"
+    }
+}

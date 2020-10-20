@@ -7,6 +7,10 @@
   pointer-events: none;
 }
 
+body{
+  background-color: #fff;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -26,6 +30,93 @@
 
 .App-link {
   color: #61dafb;
+}
+
+.hamburger .line{
+  width: 32px;
+  height: 5px;
+  background-color: #979ca0;
+  display: block;
+  margin: 4px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.hamburger:hover{
+  cursor: pointer;
+}
+
+/* ONE */
+
+#hamburger-1.is-active .line:nth-child(2){
+  opacity: 0;
+}
+
+#hamburger-1.is-active .line:nth-child(1){
+  -webkit-transform: translateY(5px) rotate(45deg);
+  -ms-transform: translateY(5px) rotate(45deg);
+  -o-transform: translateY(5px) rotate(45deg);
+  transform: translateY(5px) rotate(45deg);
+}
+
+#hamburger-1.is-active .line:nth-child(3){
+  -webkit-transform: translateY(-13px) rotate(-45deg);
+  -ms-transform: translateY(-13px) rotate(-45deg);
+  -o-transform: translateY(-13px) rotate(-45deg);
+  transform: translateY(-13px) rotate(-45deg);
+}
+
+.side-menu{
+  width: 300px;
+  height: 100vh;
+  position: absolute;
+  z-index: 1;
+  background-color: rgba(255,255,255,1);
+  padding:15px 20px;
+  transition: ease-in 0.3s;
+  transform: translateX(-300px);
+}
+.side-menu.show{
+  transform: translateX(0);
+}
+.side-menu .navbar-nav li{
+  text-align: left;
+}
+.side-menu .navbar-nav li a{
+  color: #282c34;
+}
+.cart-info{
+  line-height: 14px;
+
+}
+button.btn.counter-btn{
+  border-radius: 50%;
+  padding: 0px;
+  width: 30px;
+  height: 30px;
+}
+
+.white-bg{
+  background-color: #fff;
+}
+.mycart-wrapper{
+  background-color: #efefef;
+}
+
+.price-break-list li{
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.price-break-list li label{
+  color:rgba(0,0,0,.5);
+  margin-bottom: 0px;
+}
+.price-break-list li span.mrp-value{
+  color: #000;
+  font-weight: 400;
 }
 
 @keyframes App-logo-spin {
