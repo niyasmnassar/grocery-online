@@ -119,6 +119,21 @@ button.btn.counter-btn{
   font-weight: 400;
 }
 
+.address label{
+  display: block;
+  margin-bottom: 5px;
+}
+.primary-green{
+  background-color: #5e8141 !important;
+}
+.address .badge.badge-primary{
+  margin-top: 10px;
+  background-color: #5e8141;
+  line-height: 20px;
+  padding: 5px;
+  font-weight: 400;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

@@ -9,8 +9,10 @@ import Home from './Components/Home';
 import MyAccount from './Components/MyAccount';
 import MyOrders from './Components/MyOrders';
 import MyCart from './Components/MyCart';
+import Payment from './Components/Payment';
+import PaymentOptions from './Components/PaymentOptions';
 
-import { BrowserRouter as Router, Switch, Route, Link  } from 'react-router-dom';
+import { BrowserRouter as Router, Route  } from 'react-router-dom';
 
 function App() {
   return (
@@ -21,6 +23,8 @@ function App() {
           <Route path="/MyAccount" component={MyAccount} />
           <Route path="/MyOrders" component={MyOrders} />
           <Route path="/MyCart" component={MyCart} />
+          <Route path="/Payment" component={Payment} />
+          <Route path="/PaymentOptions" component={PaymentOptions} />
         </Router>
       <Footer />
     </div>

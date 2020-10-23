@@ -6,9 +6,10 @@ import {
   faMinus,
   faRupeeSign,
 } from "@fortawesome/free-solid-svg-icons";
+import { BrowserRouter as Router, Route, Link  } from 'react-router-dom';
 import Fade from "react-reveal/Fade";
-const MyCart = () => {
-  const [count, setCount] = useState(1);
+function MyCart() {
+  const [count, setCount] = useState(0);
 
   const increment = () => {
     setCount(count + 1);
@@ -17,10 +18,9 @@ const MyCart = () => {
     setCount(count - 1);
   };
   if (count < 0) {
-    setCount(count == 0);
+    setCount(count === 0);
   }
-  return (
-    <div>
+  return <div>
       <section className="mycart-wrapper pb-5">
         <Container>
           <Row>
@@ -37,13 +37,13 @@ const MyCart = () => {
               <div className="white-bg p-3">
                 <div className="d-flex justify-content-between mb-2">
                   <h6 className="text-left mb-3">My Bag (1 item)</h6>
-                  <fig>
+                  <span>
                     <FontAwesomeIcon icon={faRupeeSign} />
                     <b className="ml-2">33</b>
-                  </fig>
+                  </span>
                 </div>
-                <ul className="pl-0">
-                  <li className="media text-left mt-2">
+                <ul className="pl-0 mb-0">
+                  <li className="media text-left mt-3">
                     <Fade down>
                       <img
                         className="mr-3"
@@ -59,22 +59,22 @@ const MyCart = () => {
                       </div>
                       <div className="counter-blk">
                         <button
-                          onClick={increment}
-                          className="btn btn-secondary counter-btn"
-                        >
-                          <FontAwesomeIcon icon={faPlus} />
-                        </button>
-                        <span className="counter-wrap mx-2">{count}</span>
-                        <button
                           onClick={decrement}
                           className="btn btn-secondary counter-btn"
                         >
                           <FontAwesomeIcon icon={faMinus} />
                         </button>
+                        <span className="counter-wrap mx-2">{count}</span>
+                        <button
+                          onClick={increment}
+                          className="btn btn-secondary counter-btn"
+                        >
+                          <FontAwesomeIcon icon={faPlus} />
+                        </button>
                       </div>
                     </Fade>
                   </li>
-                  <li className="media text-left mt-2">
+                  <li className="media text-left mt-3">
                     <Fade down>
                       <img
                         className="mr-3"
@@ -90,17 +90,17 @@ const MyCart = () => {
                       </div>
                       <div className="counter-blk">
                         <button
-                          onClick={increment}
-                          className="btn btn-secondary counter-btn"
-                        >
-                          <FontAwesomeIcon icon={faPlus} />
-                        </button>
-                        <span className="counter-wrap mx-2">{count}</span>
-                        <button
                           onClick={decrement}
                           className="btn btn-secondary counter-btn"
                         >
                           <FontAwesomeIcon icon={faMinus} />
+                        </button>
+                        <span className="counter-wrap mx-2">{count}</span>
+                        <button
+                          onClick={increment}
+                          className="btn btn-secondary counter-btn"
+                        >
+                          <FontAwesomeIcon icon={faPlus} />
                         </button>
                       </div>
                     </Fade>
@@ -127,13 +127,12 @@ const MyCart = () => {
                     <span className="mrp-value"><b>&#8377; 108</b></span>
                   </li>
                 </ul>
-                <button className="btn btn-block btn-secondary">Place Order</button>
+                <Link to="/Payment" className="btn btn-block btn-secondary primary-green">Place Order</Link>
               </div>
             </Col>
           </Row>
         </Container>
       </section>
     </div>
-  );
 };
 export default MyCart;
