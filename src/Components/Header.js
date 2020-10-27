@@ -1,9 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import {
-  Collapse,
   Navbar,
-  NavbarToggler,
   NavbarBrand,
   Nav,
   NavItem,
@@ -13,11 +11,11 @@ import {
   InputGroupAddon,
   Input,
   Button,
-  Col,
-  Row,
+  Popover, PopoverHeader, PopoverBody
 } from "reactstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSearch, faShoppingCart } from "@fortawesome/free-solid-svg-icons";
+import { faSearch } from "@fortawesome/free-solid-svg-icons";
+import NavCart from "./NavCart";
 
 const Header = () => {
   const [menuActive, setMenuState] = useState(false);
@@ -28,7 +26,7 @@ const Header = () => {
 
   return (
     <div>
-      <Navbar color="light" light expand="md">
+      <Navbar className="header-top" color="light" light expand="md">
         <div
           onClick={() => {
             setMenuState(!menuActive);
@@ -59,10 +57,7 @@ const Header = () => {
             </Button>
           </InputGroupAddon>
         </InputGroup>
-        <NavbarText className="ml-auto d-flex align-items-center cart-info">
-          <FontAwesomeIcon icon={faShoppingCart} />
-          <span className="ml-1">My Cart </span>
-        </NavbarText>
+        <NavCart/>
       </Navbar>
       <aside className={`side-menu ${menuActive ? "show" : ""}`}>
         <Nav className="" navbar>
