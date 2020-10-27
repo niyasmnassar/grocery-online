@@ -46,10 +46,6 @@ function Products() {
 
   console.log(filter)
 
-  const addToCart = () => {
-    setCart([...cart]);
-  };
-
   return (
     <div>
       <Container>
@@ -88,7 +84,7 @@ function Products() {
                       <span className="mx-1">Our Price: {cat.ourprice}</span>
                     </CardText>
                     <div className="d-flex justify-content-between">
-                      <Button className="btn-block" href="/MyCart" onClick={() => addToCart()}>Add to Cart</Button>
+                      <Button className="btn-block" href="/MyCart">Add to Cart</Button>
                     </div>
                   </CardBody>
                 </Card>
