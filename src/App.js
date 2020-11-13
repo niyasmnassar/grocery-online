@@ -8,6 +8,7 @@ import Footer from './Components/Footer';
 import Home from './Components/Home';
 import MyAccount from './Components/MyAccount';
 import MyOrders from './Components/MyOrders';
+import Shop from './Components/Shop';
 import MyCart from './Components/MyCart';
 import Payment from './Components/Payment';
 import PaymentOptions from './Components/PaymentOptions';
@@ -22,6 +23,7 @@ function App() {
           <Route exact path="/" component={Home} />
           <Route path="/MyAccount" component={MyAccount} />
           <Route path="/MyOrders" component={MyOrders} />
+          <Route path="/Shop" component={Shop} />
           <Route path="/MyCart" component={MyCart} />
           <Route path="/Payment" component={Payment} />
           <Route path="/PaymentOptions" component={PaymentOptions} />

@@ -28,27 +28,6 @@ body{
   background-color: #efefef;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
 .hamburger .line{
   width: 32px;
   height: 3px;
@@ -112,6 +91,24 @@ button.btn.counter-btn{
   padding: 0px;
   width: 30px;
   height: 30px;
+}
+
+.slider-bg{
+    height: 400px;
+    background-size:cover;
+    position: relative;
+}
+.slider-bg:before{
+  content: "";
+  position: absolute;
+  background-color: rgba(0,0,0,0.5);
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.slider-bg .banner-content{
+  z-index: 2;
+  color:#e0e0e0;
 }
 
 .white-bg{

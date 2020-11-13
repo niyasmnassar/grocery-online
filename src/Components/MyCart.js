@@ -18,7 +18,7 @@ function MyCart() {
     setCount(count - 1);
   };
   if (count < 0) {
-    setCount(count === 0);
+    setCount(count);
   }
   return <div>
       <section className="mycart-wrapper pb-5">
