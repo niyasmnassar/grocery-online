@@ -68,7 +68,7 @@ function Products() {
       <Container>
         <Row>
           <Col md="4" className="ml-auto d-flex">
-            <select className="ml-auto mb-2" onChange={(e) => setSortType(e.target.value)}>
+            <select className="ml-auto mb-3" onChange={(e) => setSortType(e.target.value)}>
               <option value="price">Price</option>
               <option value="category">Category</option>
             </select>
@@ -86,36 +86,44 @@ function Products() {
           </Col>
         </Row>
         <Row>
-          {proCategory.map((cat, i) => (
-            <Col lg="3" md="4" sm="6" xs="12" className="mb-4" key={i}>
-              <Fade down>
-                <Card>
-                  <CardImg
-                    top
-                    width="100%"
-                    src={cat.proimg}
-                    alt="Card image cap"
-                  />
-                  <CardBody>
-                    <CardTitle>{cat.title}</CardTitle>
-                    <CardSubtitle>
-                      {cat.quantity}
-                      {cat.type}
-                    </CardSubtitle>
-                    <CardText className="mt-2">
-                      <span className="mx-1">
-                        Price: <del>{cat.price}</del>
-                      </span>
-                      <span className="mx-1">Our Price: {cat.ourprice}</span>
-                    </CardText>
-                    <div className="d-flex justify-content-between">
-                      <Button className="btn-block" href="/MyCart">Add to Cart</Button>
-                    </div>
-                  </CardBody>
-                </Card>
-              </Fade>
-            </Col>
-          ))}
+          <Col lg="3" md="3" sm="6">
+          <h6 className="text-left">FILTER</h6>
+          <input type="range" multiple />
+          </Col>
+          <Col lg="9" md="9" sm="6">
+            <Row>
+              {proCategory.map((cat, i) => (
+                <Col lg="4" md="4" sm="6" xs="12" className="mb-4" key={i}>
+                  <Fade down>
+                    <Card>
+                      <CardImg
+                        top
+                        width="100%"
+                        src={cat.proimg}
+                        alt="Card image cap"
+                      />
+                      <CardBody>
+                        <CardTitle>{cat.title}</CardTitle>
+                        <CardSubtitle>
+                          {cat.quantity}
+                          {cat.type}
+                        </CardSubtitle>
+                        <CardText className="mt-2">
+                          <span className="mx-1">
+                            Price: <del>{cat.price}</del>
+                          </span>
+                          <span className="mx-1">Our Price: {cat.ourprice}</span>
+                        </CardText>
+                        <div className="d-flex justify-content-between">
+                          <Button className="btn-block" href="/MyCart">Add to Cart</Button>
+                        </div>
+                      </CardBody>
+                    </Card>
+                  </Fade>
+                </Col>
+              ))}
+            </Row>
+          </Col>
         </Row>
       </Container>
     </div>

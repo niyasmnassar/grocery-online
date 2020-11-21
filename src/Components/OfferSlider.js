@@ -37,7 +37,7 @@ function OfferSlider () {
     ));
   
     return <div>
-        <section className="">
+        <section className="home-banner mb-4">
         <Slider dots={true} arrows={false}>{renderSlides()}</Slider>
         </section>
       </div>

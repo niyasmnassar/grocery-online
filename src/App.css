@@ -93,6 +93,15 @@ button.btn.counter-btn{
   height: 30px;
 }
 
+h4{
+  color:#89ad75;
+}
+.home-banner{
+  position: relative;
+}
+.home-banner .slick-dots{
+  bottom: 20px;
+}
 .slider-bg{
     height: 400px;
     background-size:cover;
