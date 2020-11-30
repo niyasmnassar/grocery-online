@@ -14,7 +14,7 @@ const NavCart = (props) => {
   const [popoverOpen, setPopoverOpen] = useState(false);
   const toggle = () => setPopoverOpen(!popoverOpen);
 
-  const [TotalCartValue, SetTotalCartValue] = useState(38);
+  const TotalCartValue = useState(38);
 
   return (
     <div>

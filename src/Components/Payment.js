@@ -3,10 +3,8 @@ import { Container, Row, Col, Button } from "reactstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faPlus,
-  faMinus,
-  faRupeeSign,
 } from "@fortawesome/free-solid-svg-icons";
-import { BrowserRouter as Router, Route, Link  } from 'react-router-dom';
+import { BrowserRouter as Link  } from 'react-router-dom';
 import Fade from "react-reveal/Fade";
 function Payment() {
 
